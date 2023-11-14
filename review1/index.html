@@ -17,7 +17,8 @@
             color: red;
         }
         .seconds span {
-            animation: changeColorSecond 2s linear infinite;}
+            animation: changeColorSecond 2s linear infinite;
+        }
         @keyframes changeColorSecond {
             0%, 100% {
                 color: red;
@@ -59,8 +60,8 @@
             }
             greetingElement.textContent = greeting; // thay đổi nội dung.
             greetingElement.className = className; // thay đổi css
-            const timeString = `Bây giờ là: ${currentTime.getHours()}:${String(currentTime.getMinutes()).padStart(2, '0')}:${String(currentTime.getSeconds()).padStart(2, '0')}`; 
-            // const timeString = `Bây giờ là: ${currentTime.getHours()}:${String(currentTime.getMinutes())}:${String(currentTime.getSeconds())}`;
+            // const timeString = `Bây giờ là: ${currentTime.getHours()}:${String(currentTime.getMinutes()).padStart(2, '0')}:${String(currentTime.getSeconds()).padStart(2, '0')}`; 
+            const timeString = `Bây giờ là: ${currentTime.getHours()}:${String(currentTime.getMinutes())}:${String(currentTime.getSeconds())}`;
             const timeContent = `Bây giờ là: ${currentTime}`;
             timeElement.textContent = timeString;
             // timeElement.textContent = timeContent;
@@ -76,11 +77,11 @@
 <script>
     function changeColor() {
         const textElement = document.getElementById('text'); 
-        const currentColor = textElement.style.color;
+        const currentColor = textElement.style;
         if (currentColor === 'blue') {
-            textElement.style.color = 'red';
+            textElement.style = 'red';
         } else {
-            textElement.style.color = 'blue';
+            textElement.style = 'blue';
         }
     }
     // Gọi hàm thay đổi màu mỗi giây 
