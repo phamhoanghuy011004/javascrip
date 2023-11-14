@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chào theo thời gian</title>
+    <style>
+        .greeting {
+            font-size: 24px;
+        }
+        .morning {
+            color: green;
+        }
+        .afternoon {
+            color: blue;
+        }
+        .evening {
+            color: red;
+        }
+        .seconds span {
+            animation: changeColorSecond 2s linear infinite;}
+        @keyframes changeColorSecond {
+            0%, 100% {
+                color: red;
+            }
+            50% {
+                color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="greeting" class="greeting">Xin chào</div>
+    <p id="time">Thời gian hiện tại sẽ được hiển thị ở đây</p> 
+    <div class="seconds">Giây: <span>0</span></div>
+    <script>
+        function updateGreeting() {
+            const greetingElement = document.getElementById('greeting'); 
+            const timeElement = document.getElementById('time');
+            const secondsElement = document.querySelector('.seconds span'); 
+            const currentTime = new Date();
+            const currentHour = currentTime.getHours();
+            // const currentHour1; // phải khởi tạo giá trị cho const
+            // const currentHour; // không được khai báo lại trong cùng block
+            let greeting = '';
+            let className = '';
+            // let className1; // không cần phải khởi tạo khi khai báo
+            // let className; // không được khai báo lại
+            
+
+            if (currentHour >= 5 && currentHour < 12) {
+                greeting = 'Chào buổi sáng';
+                className = 'morning';
+            } else if (currentHour >= 12 && currentHour < 18) {
+                greeting = 'Chào buổi chiều';
+                className = 'afternoon';
+            } else {
+                greeting = 'Chào buổi tối';
+                className = 'evening';
+            }
+            greetingElement.textContent = greeting; // thay đổi nội dung.
+            greetingElement.className = className; // thay đổi css
+            const timeString = `Bây giờ là: ${currentTime.getHours()}:${String(currentTime.getMinutes()).padStart(2, '0')}:${String(currentTime.getSeconds()).padStart(2, '0')}`; 
+            // const timeString = `Bây giờ là: ${currentTime.getHours()}:${String(currentTime.getMinutes())}:${String(currentTime.getSeconds())}`;
+            const timeContent = `Bây giờ là: ${currentTime}`;
+            timeElement.textContent = timeString;
+            // timeElement.textContent = timeContent;
+            secondsElement.textContent = currentTime.getSeconds();
+        }
+
+        // Gọi hàm cập nhật mỗi giây 
+        setInterval(updateGreeting, 1000);
+        // Cập nhật lần đầu khi tải trang 
+        updateGreeting();
+    </script>
+<p id="text" style="color: blue;">Văn bản này đang thay đổi màu</p>
+<script>
+    function changeColor() {
+        const textElement = document.getElementById('text'); 
+        const currentColor = textElement.style.color;
+        if (currentColor === 'blue') {
+            textElement.style.color = 'red';
+        } else {
+            textElement.style.color = 'blue';
+        }
+    }
+    // Gọi hàm thay đổi màu mỗi giây 
+    setInterval(changeColor, 1000);
+</script>
+</body>
+</html>
