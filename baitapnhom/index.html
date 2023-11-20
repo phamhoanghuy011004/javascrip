@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./css/style.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+      <title>BookParadise Website</title>
+      <link href="https://fonts.googleapis.com/css2?family =Raleway:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap"
+         rel ="stylesheet">
+   </head>
+   <body>
+      <div class="header">
+         <div class="container">
+            <div class="navbar">
+               <div class="logo">
+                  <a href="index.html" class="logo-red">BookParadise</a>
+               </div>
+               <nav>
+                  <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="product.html">Products</a></li>
+                     <li><a href="about.html">About Us</a></li>
+                     <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+               </nav>
+            </div>
+            <div class="row">
+               <div class="col-2">
+                  <h1>“F5 TỦ ĐỒ”VỚI TRANG PHỤC MẶC NHÀ CHO BẠN GÁI</h1>
+                  <p>Không những trang phục diện ra ngoài mà ngay cả chính những bộ trang phục diện ở nhà cũng góp phần không ít trong việc tôn lên nét đẹp của chị em trước những người thân yêu.
+                     Mùa hè đến rồi, hãy cập nhật xu hướng và làm mới những bộ trang phục mặc nhà cho tủ đồ của mình nhé!
+                  </p>
+                  <a href="product.html" class="btn">Xem thêm &#10137;</a>
+               </div>
+               <div class="col-2">
+                  <img src="./images/f53.jpg" alt="img" />
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="categories">
+         <div class="small-container">
+            <div class="row">
+               <div class="col-3">
+                  <img src="./images/anh2..jpg" />
+               </div>
+               <div class="col-3">
+                  <img src="./images/anh3.jpg" />
+               </div>
+               <div class="col-3">
+                  <img src="./images/anh6.jpg" />
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="featured">
+         <div class="small-container">
+            <h2 class="title">Featured Products</h2>
+            <div class="row" id="product-list">
+               <div class="col-4" data-target="#modal1">
+                  <img src="./images/anh4.jpg" />
+                  <h4 class="product-name">Bộ đò mặc nhà Happy Lady phi HP2003 SID61852</h4>
+                  <div class="rating">
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-o"></i>
+                  </div>
+                  <p>$80.00</p>
+               </div>
+               <div class="col-4" data-target="#modal2">
+                  <img src="./images/anh5.jpg" />  
+                  <h4 class="product-name">Đầm ngủ phối ren xẻ tà quyến rũ SID62091</h4>
+                  <div class="rating">
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-o"></i>
+                  </div>
+                  <p>$30.00</p>
+               </div>
+               <div class="col-4" data-target="#modal3">
+                  <img src="./images/anh7.jpg" />
+                  <h4 class="product-name">Bộ đồ short ngắn HISEXY đắp ren ngực B279 SID66125</h4>
+                  <div class="rating">
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-half-o"></i>
+                  </div>
+                  <p>$20.00</p>
+               </div>
+               <div class="col-4" data-target="#modal4">
+                  <img src="./images/anh8.jpg" />
+                  <h4 class="product-name">Bộ short mặc nhà Happy Lady 2021 SID66129</h4>
+                  <div class="rating">
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-half-o"></i>
+                  </div>
+                  <p>$50.00</p>
+               </div>
+               <div class="col-4" data-target="#modal5">
+                  <img src="./images/anh9.jpg" />
+                  <h4 class="product-name">Bộ đồ mặc nhà phi Happy Lady HS2019 SID64805</h4>
+                  <div class="rating">
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-half-o"></i>
+                  </div>
+                  <p>$110.00</p>
+               </div>
+               <div class="col-4" data-target="#modal6">
+                  <img src="./images/anh10.jpg" />
+                  <h4 class="product-name">Bộ short HISEXY phối ren cổ tim B297 SID65328</h4>
+                  <div class="rating">
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-half-o"></i>
+                  </div>
+                  <p>$35.00</p>
+               </div>
+               <div class="col-4" data-target="#modal7">
+                  <img src="./images/anh11.jpg" />
+                  <h4 class="product-name">Áo khoác ngủ nữ HISEXY phối tay ren quyến rũ K280 SID65246</h4>
+                  <div class="rating">
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-half-o"></i>
+                  </div>
+                  <p>$95.00</p>
+               </div>
+               <div class="col-4" data-target="#modal8">
+                  <img src="./images/anh12.jpg" />
+                  <h4 class="product-name">Set đồ mặc ngủ ren phối hoa duyên dáng SID64104</h4>
+                  <div class="rating">
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-half-o"></i>
+                  </div>
+                  <p>$150.00</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer">
+         <div class="container">
+            <div class="row">
+               <div class="footer-col-1">
+                  <a href="index.html" class="logo-white">ZANADO</a>
+                  <ul>
+                  <li>Giới thiệu Zanado</li>
+                  <li>Giải quyết khiếu nại bảo hành</li>
+                  <li>Chính sách bảo mật </li>
+                  <li>Tuyển dụng</li>
+                  </ul>
+               </div>
+               <div class="footer-col-2">
+                  <a href="index.html" class="logo-white">HỢP TÁC</a>
+                  <ul>
+                  <li>Cung cấp hàng cho Zanado</li>
+                  <li>Buôn bán - Bán sỉ </li>
+                  <li>Gia công may mặc thời trang </li>
+                  <li>Tuyển đại lý </li>
+                  </ul>
+               </div>
+               <div class="footer-col-4">
+                  <h3>HỖ TRỢ </h3>
+                  <ul>
+                     <li>Thanh toán online </li>
+                     <li>Hưỡng dẫn mua hàng </li>
+                     <li>hỏi đáp </li>
+                     <li>liên hệ</li>
+                  </ul>
+               </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - ZANADO</p>
+         </div>
+      </div>
+      <!-------------End Footer---------------->
+      <!-------------Start Modal---------------->
+      <div class="modal" id="modal1">
+         <div class="single-item">
+            <div class="small-container">
+               <div class="modal-header">
+                  <button class="close-modal">&times;</button>
+               </div>
+               <div class="row">
+                  <div class="col-2">
+                     <img src="images/product-1.jpg" width="100%" />
+                  </div>
+                  <div class="col-2">
+                     <p>Home / Books</p>
+                     <h1>HTML</h1>
+                     <h4>Price: $80</h4>
+                     <h4>Quantity: </h4>
+                     <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                     </select>
+                     <br>
+                     <a href="" class="btn">Add To Cart</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal" id="modal2">
+         <div class="single-item">
+            <div class="small-container">
+               <div class="modal-header">
+                  <button class="close-modal">&times;</button>
+               </div>
+               <div class="row">
+                  <div class="col-2">
+                     <img src="images/product-2.jpg" width="100%" />
+                  </div>
+                  <div class="col-2">
+                     <p>Home / Books</p>
+                     <h1>CSS</h1>
+                     <h4>Price: $30</h4>
+                     <h4>Quantity: </h4>
+                     <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                     </select>
+                     <br>
+                     <a href="" class="btn">Add To Cart</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal" id="modal3">
+         <div class="single-item">
+            <div class="small-container">
+               <div class="modal-header">
+                  <button class="close-modal">&times;</button>
+               </div>
+               <div class="row">
+                  <div class="col-2">
+                     <img src="images/product-3.jpg" width="100%" />
+                  </div>
+                  <div class="col-2">
+                     <p>Home / Books</p>
+                     <h1>JavaScript</h1>
+                     <h4>Price: $20</h4>
+                     <h4>Quantity: </h4>
+                     <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                     </select>
+                     <br>
+                     <a href="" class="btn">Add To Cart</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal" id="modal4">
+         <div class="single-item">
+            <div class="small-container">
+               <div class="modal-header">
+                  <button class="close-modal">&times;</button>
+               </div>
+               <div class="row">
+                  <div class="col-2">
+                     <img src="images/product-4.jpg" width="100%" />
+                  </div>
+                  <div class="col-2">
+                     <p>Home / Books</p>
+                     <h1>Angular</h1>
+                     <h4>Price: $50</h4>
+                     <h4>Quantity: </h4>
+                     <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                     </select>
+                     <br>
+                     <a href="" class="btn">Add To Cart</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal" id="modal5">
+         <div class="single-item">
+            <div class="small-container">
+               <div class="modal-header">
+                  <button class="close-modal">&times;</button>
+               </div>
+               <div class="row row-2">
+                  <div class="col-2">
+                     <img src="images/product-5.jpg" width="100%" />
+                  </div>
+                  <div class="col-2">
+                     <p>Home / Books</p>
+                     <h1>Learning Programming Techniques 110</h1>
+                     <h4>Price: $110</h4>
+                     <h4>Quantity: </h4>
+                     <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                     </select>
+                     <br>
+                     <a href="" class="btn">Add To Cart</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal" id="modal6">
+         <div class="single-item">
+            <div class="small-container">
+               <div class="modal-header">
+                  <button class="close-modal">&times;</button>
+               </div>
+               <div class="row row2">
+                  <div class="col-2">
+                     <img src="images/product-6.jpg" width="100%" />
+                  </div>
+                  <div class="col-2">
+                     <p>Home / Books</p>
+                     <h1>Improving Productivity</h1>
+                     <h4>Price: $35</h4>
+                     <h4>Quantity: </h4>
+                     <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                     </select>
+                     <br>
+                     <a href="" class="btn">Add To Cart</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal" id="modal7">
+         <div class="single-item">
+            <div class="small-container">
+               <div class="modal-header">
+                  <button class="close-modal">&times;</button>
+               </div>
+               <div class="row row2">
+                  <div class="col-2">
+                     <img src="images/product-7.jpg" width="100%" />
+                  </div>
+                  <div class="col-2">
+                     <p>Home / Books</p>
+                     <h1>Modern Programming</h1>
+                     <h4>Price: $95</h4>
+                     <h4>Quantity: </h4>
+                     <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                     </select>
+                     <br>
+                     <a href="" class="btn">Add To Cart</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal" id="modal8">
+         <div class="single-item">
+            <div class="small-container">
+               <div class="modal-header">
+                  <button class="close-modal">&times;</button>
+               </div>
+               <div class="row row2">
+                  <div class="col-2">
+                     <img src="images/product-8.jpg" width="100%" />
+                  </div>
+                  <div class="col-2">
+                     <p>Home / Books</p>
+                     <h1>Mindful Learning</h1>
+                     <h4>Price: $150</h4>
+                     <h4>Quantity: </h4>
+                     <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                     </select>
+                     <br>
+                     <a href="" class="btn">Add To Cart</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="overlay"></div>
+   </body>
+   <script src="./js/main.js"></script>
+</html>
+
