@@ -1,0 +1,26 @@
+body {
+    background-color:rgba(90, 148, 218, 0.921);
+}
+
+.container {
+    max-width: 600px;
+    margin-top: 50px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+   color: #ffffff;
+}
+
+.mot {
+    color: #ffffff;
+    text-align: center;
+
+}
